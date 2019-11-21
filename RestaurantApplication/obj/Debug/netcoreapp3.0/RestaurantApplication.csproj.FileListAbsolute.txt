@@ -12,7 +12,6 @@ C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\bi
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\RestaurantApplication.csprojAssemblyReference.cache
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\staticwebassets\RestaurantApplication.StaticWebAssets.Manifest.cache
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\staticwebassets\RestaurantApplication.StaticWebAssets.xml
-C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\RestaurantApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\RestaurantApplication.RazorAssemblyInfo.cache
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\RestaurantApplication.RazorAssemblyInfo.cs
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\RestaurantApplication.AssemblyInfoInputs.cache
@@ -33,3 +32,10 @@ C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\ob
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\RestaurantApplication.dll
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\RestaurantApplication.pdb
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\RestaurantApplication.csproj.CopyComplete
+C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\Razor\Views\Order\Display.cshtml.g.cs
+C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\Razor\Views\Ingredient\Insert.cshtml.g.cs
+C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\Razor\Views\Menu\Add.cshtml.g.cs
+C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\Razor\Views\Menu\List.cshtml.g.cs
+C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\Razor\Views\Order\Create.cshtml.g.cs
+C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\Razor\Views\Account\Register.cshtml.g.cs
