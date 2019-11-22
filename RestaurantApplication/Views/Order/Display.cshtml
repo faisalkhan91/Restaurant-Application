@@ -3,3 +3,28 @@
 *@
 @{
 }
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<RestaurantApplication.Models.Order>
+
+<h3>All Active Orders</h3>
+<br />
+
+<div class="card-deck">
+
+    @foreach (var item in Model)
+    {
+        <div class="card m-3">
+            <img class="card-img-top" src="~/image/event.jpg" />
+            <div class="card-header">
+                @*<h4>@item.Menu.ItemName</h4>*@
+                <h5>@item.Quantity</h5>
+                <h5>@item.OrderPlaced</h5>
+                <h5>@item.Status</h5>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="home" asp-action="index" asp-route-id="" class="btn btn-primary">View</a>
+            </div>
+        </div>
+    }
+</div>

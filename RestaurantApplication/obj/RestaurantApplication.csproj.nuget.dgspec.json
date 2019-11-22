@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj": {}
+    "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj": {
+    "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj",
+        "projectUniqueName": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj",
         "projectName": "RestaurantApplication",
-        "projectPath": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj",
-        "packagesPath": "C:\\Users\\faisa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\obj\\",
+        "projectPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj",
+        "packagesPath": "C:\\Users\\hackathon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\faisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hackathon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,6 +64,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "bootstrap": {
               "target": "Package",

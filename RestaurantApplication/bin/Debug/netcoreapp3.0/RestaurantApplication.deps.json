@@ -29,7 +29,9 @@
           "Microsoft.EntityFrameworkCore.Relational": "3.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "3.0.1",
+          "Newtonsoft.Json": "12.0.3",
           "bootstrap": "4.3.1",
+          "bootstrap.sass": "4.3.1",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -310,6 +312,12 @@
         }
       },
       "bootstrap/4.3.1": {
+        "dependencies": {
+          "jQuery": "3.0.0",
+          "popper.js": "1.14.0"
+        }
+      },
+      "bootstrap.sass/4.3.1": {
         "dependencies": {
           "jQuery": "3.0.0",
           "popper.js": "1.14.0"
@@ -607,6 +615,17 @@
         "dependencies": {
           "System.Security.AccessControl": "4.5.0",
           "System.Security.Principal.Windows": "4.5.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "popper.js/1.14.0": {},
@@ -2826,6 +2845,13 @@
       "path": "bootstrap/4.3.1",
       "hashPath": "bootstrap.4.3.1.nupkg.sha512"
     },
+    "bootstrap.sass/4.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K75hC5YtxsmvSDPiVJNQ3ykH+yrdFyylhbM+dQPHUVUBJk16ZTqKjcTJmgIY9Zmbpqs78fk5K6HV8UCBy22Xjg==",
+      "path": "bootstrap.sass/4.3.1",
+      "hashPath": "bootstrap.sass.4.3.1.nupkg.sha512"
+    },
     "jQuery/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3001,6 +3027,13 @@
       "path": "microsoft.win32.registry/4.5.0",
       "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "popper.js/1.14.0": {
       "type": "package",
       "serviceable": true,
@@ -3067,7 +3100,7 @@
     "System.Collections.NonGeneric/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
+      "sha512": "sha512-LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
       "path": "system.collections.nongeneric/4.3.0",
       "hashPath": "system.collections.nongeneric.4.3.0.nupkg.sha512"
     },
@@ -3102,7 +3135,7 @@
     "System.ComponentModel.TypeConverter/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "sha512": "sha512-HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
     },

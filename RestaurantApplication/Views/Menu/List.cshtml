@@ -5,6 +5,7 @@
 }
 
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<RestaurantApplication.Models.Menu>
 
 <h3>Menu Items</h3>
 <br />
@@ -13,18 +14,18 @@
     @{var items = ViewBag.Event as IEnumerable<RestaurantApplication.Models.Menu>;
     }
 
-    @foreach (RestaurantApplication.Models.Menu item in items)
+    @foreach (var item in Model)
     {
         <div class="card m-3">
             <img class="card-img-top" src="~/image/event.jpg" />
             <div class="card-header">
                 <h4>@item.ItemName</h4>
-                <h5>From @item.Ingredients</h5>
-                <h5>Until @item.Price</h5>
-                <h5>Event will last for @item.Description hours</h5>
+                <h5>@item.Ingredients</h5>
+                <h5>@item.Price</h5>
+                <h5>@item.Description</h5>
             </div>
             <div class="card-footer text-center">
-                <a asp-controller="home" asp-action="index" asp-route-id="" class="btn btn-primary">View</a>
+                <a asp-controller="Order" asp-action="Create" asp-route-id="" class="btn btn-primary">Order</a>
             </div>
         </div>
     }

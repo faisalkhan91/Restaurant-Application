@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\RestaurantAPI.csproj": {}
+    "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\RestaurantAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\RestaurantAPI.csproj": {
+    "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\RestaurantAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\RestaurantAPI.csproj",
+        "projectUniqueName": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\RestaurantAPI.csproj",
         "projectName": "RestaurantAPI",
-        "projectPath": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\RestaurantAPI.csproj",
-        "packagesPath": "C:\\Users\\faisa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\obj\\",
+        "projectPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\RestaurantAPI.csproj",
+        "packagesPath": "C:\\Users\\hackathon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\faisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hackathon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
