@@ -33,7 +33,7 @@ namespace RestaurantApplication.Controllers
                 HttpClient client = _helper.InitializeBase();
                 string postString = JsonConvert.SerializeObject(item);
                 HttpContent _content=new  StringContent(postString, System.Text.Encoding.UTF8, "application/json");
-                HttpResponseMessage res = await client.PostAsync("api/Orders", _content);
+                HttpResponseMessage res = await client.PostAsync("api/Orders/PostOrder", _content);
                 ViewBag.ValidationMessage = null;
                 if (res.IsSuccessStatusCode == true)
                 {

@@ -10,7 +10,7 @@ namespace RestaurantAPI.Models
     public class Order
     {
         int _orderId;
-        Menu _menu;
+        int _menuId;
         int _quantity;
         DateTime _orderPlaced;
         StatusType _status; // Make order status
@@ -18,7 +18,7 @@ namespace RestaurantAPI.Models
         [Key]
         public int OrderId { get => _orderId; set => _orderId = value; }
         [Required]
-        public Menu Menu { get => _menu; set => _menu = value; }
+        public int MenuId { get => _menuId; set => _menuId = value; }
         [Required]
         public int Quantity { get => _quantity; set => _quantity = value; }
         [Required]

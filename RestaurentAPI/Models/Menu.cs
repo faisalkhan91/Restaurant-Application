@@ -18,8 +18,8 @@ namespace RestaurantAPI.Models
         public int MenuId { get => _menuId; set => _menuId = value; }
         [Required]
         public string ItemName { get => _itemName; set => _itemName = value; }
-        [Required]
-        public List<Ingredient> Ingredients { get => _ingredients; set => _ingredients = value; }
+        //[Required]
+        //public List<Ingredient> Ingredients { get => _ingredients; set => _ingredients = value; }
         [Required]
         public float Price { get => _price; set => _price = value; }
         [Required]

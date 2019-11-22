@@ -105,5 +105,45 @@ namespace RestaurantAPI.Controllers
         {
             return _context.Orders.Any(e => e.OrderId == id);
         }
+
+        //[HttpPost]
+        //public async Task<ActionResult<bool>> PlaceOrder(Order order)
+        //{
+        //    var menu_Ingredients = await _context.MenuIngredients.Include(b => b.Menu_Id).Include(a => a.Ingredient_Id).ToListAsync();
+        //    List<MenuIngredient> m = menu_Ingredients.FindAll(mi => mi.MenuReferenceId == order.MenuId);
+        //    List<Ingredient> ingredients = await _context.Ingredients.ToListAsync();
+
+        //    List<Ingredient> l = new List<Ingredient>();
+        //    foreach (MenuIngredient ingredients1 in m)
+        //    {
+        //        Ingredient ingredient = ingredients.Find(i => i.IngredientId == ingredients1.IngredientReferenceId);
+        //        if (ingredient.Quantity < ingredients1.Quantity * order.Quantity)
+        //        {
+        //            return false;
+        //        }
+        //        else
+        //        {
+        //            l.Add(ingredient);
+        //        }
+        //    }
+        //    foreach (Ingredient i in l)
+        //    {
+        //        MenuIngredient ingredients1 = m.Find(ing => ing.IngredientReferenceId == i.IngredientId);
+        //        _context.Ingredients.Find(i.IngredientId).Quantity -= ingredients1.Quantity * order.Quantity;
+        //        int pl = _context.Ingredients.Find(i.IngredientId).Quantity;
+        //    }
+
+        //    //Order o = new Order() { Menu_id = order.Menu_id, Quantity = order.Quantity, Order_placed = order.Order_placed, status = order.status};
+        //    _context.Orders.Add(order);
+        //    await _context.SaveChangesAsync();
+        //    return true;
+        //}
+
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Order>>> GetAllActiveOrder()
+        //{
+        //    var orders = await _context.Orders.ToListAsync();
+        //    return orders.FindAll(ord => ord.Status == StatusType.InProgress || ord.Status == StatusType.Placed);
+        //}
     }
 }

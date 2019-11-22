@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -31,16 +32,33 @@ namespace RestaurantApplication.Controllers
             {
                 List<Menu> item = new List<Menu>();
                 HttpClient client = _helper.InitializeBase();
-                string postString = JsonConvert.SerializeObject(item);
-                HttpContent _content = new StringContent(postString, System.Text.Encoding.UTF8, "application/json");
-                HttpResponseMessage res = await client.PostAsync("api/Orders", _content);
-                ViewBag.ValidationMessage = null;
-                if (res.IsSuccessStatusCode == true)
+                var myContent = JsonConvert.SerializeObject(item);
+                var buffer = System.Text.Encoding.UTF8.GetBytes(myContent);
+
+                HttpContent byteContent = new ByteArrayContent(buffer);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                HttpResponseMessage reposnse = await client.PostAsync("api/Menus/PostMenu", byteContent);
+
+                if (reposnse.IsSuccessStatusCode == true)
                 {
-                    var result = res.Content.ReadAsStringAsync().Result;
-                    item = JsonConvert.DeserializeObject<List<Menu>>(result);
+                    var result = reposnse.Content.ReadAsStringAsync().Result;
+                    bool status = JsonConvert.DeserializeObject<bool>(result);
+                    return RedirectToAction("index", "home");
                 }
-                return View(item);
+                else
+                {
+                    ViewData["Status"] = "500";
+                }
+                //string postString = JsonConvert.SerializeObject(item);
+                //HttpContent _content = new StringContent(postString, System.Text.Encoding.UTF8, "application/json");
+                //HttpResponseMessage res = await client.PostAsync("api/Orders", _content);
+                //ViewBag.ValidationMessage = null;
+                //if (res.IsSuccessStatusCode == true)
+                //{
+                //    var result = res.Content.ReadAsStringAsync().Result;
+                //    item = JsonConvert.DeserializeObject<List<Menu>>(result);
+                //}
+                //return View(item);
             }
             else
             {
