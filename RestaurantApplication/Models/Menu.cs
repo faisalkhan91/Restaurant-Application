@@ -15,7 +15,7 @@ namespace RestaurantApplication.Models
 
         public int MenuId { get => _menuId; set => _menuId = value; }
         public string ItemName { get => _itemName; set => _itemName = value; }
-        public List<Ingredient> Ingredients { get => _ingredients; set => _ingredients = value; }
+        //public List<Ingredient> Ingredients { get => _ingredients; set => _ingredients = value; }
         public float Price { get => _price; set => _price = value; }
         public string Description { get => _description; set => _description = value; }
     }

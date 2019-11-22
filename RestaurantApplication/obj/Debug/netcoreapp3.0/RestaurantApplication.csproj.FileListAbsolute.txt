@@ -143,3 +143,4 @@ C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\bi
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\RestaurantApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\Razor\Views\Ingredient\View.cshtml.g.cs
+C:\Users\hackathon\Desktop\DotNet\RestaurantApplication\RestaurantApplication\obj\Debug\netcoreapp3.0\Razor\Views\Order\Change.cshtml.g.cs

@@ -17,13 +17,14 @@
         <div class="card m-3">
             <img class="card-img-top" src="~/image/event.jpg" />
             <div class="card-header">
-                @*<h4>@item.Menu.ItemName</h4>*@
-                <h5>@item.Quantity</h5>
-                <h5>@item.OrderPlaced</h5>
-                <h5>@item.Status</h5>
+                <h5>Order ID: @item.OrderId</h5>
+                <h5>Menu Item: @item.MenuId</h5>
+                <h5>Quantity: @item.Quantity</h5>
+                <h5>Order Time: @item.OrderPlaced</h5>
+                <h5>Order Status: @item.Status</h5>
             </div>
             <div class="card-footer text-center">
-                @*<a asp-controller="home" asp-action="index" asp-route-id="" class="btn btn-primary">View</a>*@
+                <a asp-controller="Order" asp-action="Change" asp-route-id="" class="btn btn-primary">Change Status</a>
             </div>
         </div>
     }
