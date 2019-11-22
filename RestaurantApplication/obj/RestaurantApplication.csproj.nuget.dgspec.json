@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj": {}
+    "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj": {
+    "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj",
+        "projectUniqueName": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj",
         "projectName": "RestaurantApplication",
-        "projectPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj",
-        "packagesPath": "C:\\Users\\hackathon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurantApplication\\obj\\",
+        "projectPath": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\RestaurantApplication.csproj",
+        "packagesPath": "C:\\Users\\faisa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurantApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\hackathon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\faisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,9 +41,37 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "bootstrap.sass": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [

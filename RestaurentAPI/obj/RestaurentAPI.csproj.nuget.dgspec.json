@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\RestaurentAPI.csproj": {}
+    "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\RestaurentAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\RestaurentAPI.csproj": {
+    "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\RestaurentAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\RestaurentAPI.csproj",
+        "projectUniqueName": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\RestaurentAPI.csproj",
         "projectName": "RestaurentAPI",
-        "projectPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\RestaurentAPI.csproj",
-        "packagesPath": "C:\\Users\\hackathon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hackathon\\Desktop\\DotNet\\RestaurantApplication\\RestaurentAPI\\obj\\",
+        "projectPath": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\RestaurentAPI.csproj",
+        "packagesPath": "C:\\Users\\faisa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\faisa\\Desktop\\RestaurantApplication\\RestaurentAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\hackathon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\faisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,6 +49,20 @@
               "target": "Package",
               "version": "[3.0.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.1, )"
@@ -57,11 +71,11 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

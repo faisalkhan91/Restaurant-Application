@@ -6,9 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestaurantAPI.Models;
-using RestaurentAPI.Models;
 
-namespace RestaurentAPI.Controllers
+namespace RestaurantAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
