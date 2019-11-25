@@ -28,7 +28,8 @@ namespace RestaurantApplication.Controllers
         {
             if (ModelState.IsValid)
             {
-                List<Ingredient> item = new List<Ingredient>();
+                Ingredient item = new Ingredient();
+                item = ing;
                 HttpClient client = _helper.InitializeBase();
                 string postString = JsonConvert.SerializeObject(item);
                 HttpContent _content = new StringContent(postString, System.Text.Encoding.UTF8, "application/json");
@@ -37,9 +38,13 @@ namespace RestaurantApplication.Controllers
                 if (res.IsSuccessStatusCode == true)
                 {
                     var result = res.Content.ReadAsStringAsync().Result;
-                    //item = JsonConvert.DeserializeObject<List<Menu>>(result);
+                    item = JsonConvert.DeserializeObject<Ingredient>(result);
+                    return RedirectToAction("Index", "Home");
                 }
-                return View(item);
+                else
+                {
+                    ViewData["Status"] = "500";
+                }
             }
             else
             {

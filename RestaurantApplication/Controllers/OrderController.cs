@@ -29,18 +29,23 @@ namespace RestaurantApplication.Controllers
         {
             if (ModelState.IsValid)
             {
-                List<Order> item = new List<Order>();
+                Order item = new Order();
+                item = ord;
                 HttpClient client = _helper.InitializeBase();
                 string postString = JsonConvert.SerializeObject(item);
-                HttpContent _content=new  StringContent(postString, System.Text.Encoding.UTF8, "application/json");
-                HttpResponseMessage res = await client.PostAsync("api/Orders/PostOrder", _content);
+                HttpContent _content = new StringContent(postString, System.Text.Encoding.UTF8, "application/json");
+                HttpResponseMessage res = await client.PostAsync("api/Orders", _content);
                 ViewBag.ValidationMessage = null;
                 if (res.IsSuccessStatusCode == true)
                 {
                     var result = res.Content.ReadAsStringAsync().Result;
-                    item = JsonConvert.DeserializeObject<List<Order>>(result);
+                    item = JsonConvert.DeserializeObject<Order>(result);
+                    return RedirectToAction("Index", "Home");
                 }
-                return View(item);
+                else
+                {
+                    ViewData["Status"] = "500";
+                }
             }
             else
             {
@@ -64,11 +69,13 @@ namespace RestaurantApplication.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Change()
+        public async Task<IActionResult> Change(int id)
         {
             Order item = new Order();
             HttpClient client = _helper.InitializeBase();
-            HttpResponseMessage res = await client.GetAsync("api/Orders/1");
+            item.OrderId = id;
+            string url = "api/Orders/" + item.OrderId;
+            HttpResponseMessage res = await client.GetAsync(url);
             if (res.IsSuccessStatusCode == true)
             {
                 var result = res.Content.ReadAsStringAsync().Result;
@@ -82,18 +89,24 @@ namespace RestaurantApplication.Controllers
         {
             if (ModelState.IsValid)
             {
-                List<Order> item = new List<Order>();
+                Order item = new Order();
+                item = ord;
+
                 HttpClient client = _helper.InitializeBase();
                 string postString = JsonConvert.SerializeObject(item);
                 HttpContent _content = new StringContent(postString, System.Text.Encoding.UTF8, "application/json");
-                HttpResponseMessage res = await client.PostAsync("api/Orders/PostOrder", _content);
+                HttpResponseMessage res = await client.PutAsync("api/Orders", _content);
                 ViewBag.ValidationMessage = null;
                 if (res.IsSuccessStatusCode == true)
                 {
                     var result = res.Content.ReadAsStringAsync().Result;
-                    item = JsonConvert.DeserializeObject<List<Order>>(result);
+                    item = JsonConvert.DeserializeObject<Order>(result);
+                    return RedirectToAction("Index", "Home");
                 }
-                return View(item);
+                else
+                {
+                    ViewData["Status"] = "500";
+                }
             }
             else
             {

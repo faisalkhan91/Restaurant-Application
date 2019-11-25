@@ -24,7 +24,7 @@
                 <h5>Order Status: @item.Status</h5>
             </div>
             <div class="card-footer text-center">
-                <a asp-controller="Order" asp-action="Change" asp-route-id="" class="btn btn-primary">Change Status</a>
+                <a asp-controller="Order" asp-action="Change" asp-route-id="@item.OrderId" class="btn btn-primary">Change Status</a>
             </div>
         </div>
     }

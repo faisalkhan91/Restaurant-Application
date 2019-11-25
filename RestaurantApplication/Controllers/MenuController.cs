@@ -30,35 +30,40 @@ namespace RestaurantApplication.Controllers
         {
             if (ModelState.IsValid)
             {
-                List<Menu> item = new List<Menu>();
+                Menu item = new Menu();
+                item = men;
                 HttpClient client = _helper.InitializeBase();
-                var myContent = JsonConvert.SerializeObject(item);
-                var buffer = System.Text.Encoding.UTF8.GetBytes(myContent);
+                //var myContent = JsonConvert.SerializeObject(item);
+                //var buffer = System.Text.Encoding.UTF8.GetBytes(myContent);
 
-                HttpContent byteContent = new ByteArrayContent(buffer);
-                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                HttpResponseMessage reposnse = await client.PostAsync("api/Menus/PostMenu", byteContent);
+                //HttpContent byteContent = new ByteArrayContent(buffer);
+                //byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                //HttpResponseMessage reposnse = await client.PostAsync("api/Menus", byteContent);
 
-                if (reposnse.IsSuccessStatusCode == true)
+                //if (reposnse.IsSuccessStatusCode == true)
+                //{
+                //    var result = reposnse.Content.ReadAsStringAsync().Result;
+                //    item = JsonConvert.DeserializeObject<Menu>(result);
+                //    return RedirectToAction("index", "home");
+                //}
+                //else
+                //{
+                //    ViewData["Status"] = "500";
+                //}
+                string postString = JsonConvert.SerializeObject(item);
+                HttpContent _content = new StringContent(postString, System.Text.Encoding.UTF8, "application/json");
+                HttpResponseMessage res = await client.PostAsync("api/Menus", _content);
+                ViewBag.ValidationMessage = null;
+                if (res.IsSuccessStatusCode == true)
                 {
-                    var result = reposnse.Content.ReadAsStringAsync().Result;
-                    bool status = JsonConvert.DeserializeObject<bool>(result);
-                    return RedirectToAction("index", "home");
+                    var result = res.Content.ReadAsStringAsync().Result;
+                    item = JsonConvert.DeserializeObject<Menu>(result);
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
                     ViewData["Status"] = "500";
                 }
-                //string postString = JsonConvert.SerializeObject(item);
-                //HttpContent _content = new StringContent(postString, System.Text.Encoding.UTF8, "application/json");
-                //HttpResponseMessage res = await client.PostAsync("api/Orders", _content);
-                //ViewBag.ValidationMessage = null;
-                //if (res.IsSuccessStatusCode == true)
-                //{
-                //    var result = res.Content.ReadAsStringAsync().Result;
-                //    item = JsonConvert.DeserializeObject<List<Menu>>(result);
-                //}
-                //return View(item);
             }
             else
             {

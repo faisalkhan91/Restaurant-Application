@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Views\Inventory\" />
+    <Folder Include="wwwroot\indexfiles\" />
   </ItemGroup>
 
   <ItemGroup>
